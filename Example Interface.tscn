@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxi7lwo04g3th"]
+
+[ext_resource type="PackedScene" uid="uid://b2kftgwyb1mjd" path="res://addons/BasharsUIToolkit/UI/tk_button.tscn" id="1_tl1y8"]
+
+[node name="ExampleInterface" type="Node2D"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TK_Button" parent="VBoxContainer" instance=ExtResource("1_tl1y8")]
+layout_mode = 2
+
+[node name="TK_Button2" parent="VBoxContainer" instance=ExtResource("1_tl1y8")]
+layout_mode = 2
+
+[node name="TK_Button3" parent="VBoxContainer" instance=ExtResource("1_tl1y8")]
+layout_mode = 2

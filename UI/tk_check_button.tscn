@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://clea7wba77jet"]
+
+[ext_resource type="Script" uid="uid://6qne3wpf722m" path="res://addons/BasharsUIToolkit/UI/tk_check_button.gd" id="1_glwtq"]
+[ext_resource type="Theme" uid="uid://ddu24exo5q3l8" path="res://addons/BasharsUIToolkit/UI/AColorTheoryUI.tres" id="2_yv8n1"]
+
+[node name="TK_CheckButton" type="CheckButton"]
+theme = ExtResource("2_yv8n1")
+text = "Check Button"
+script = ExtResource("1_glwtq")
+
+[node name="Tooltip" type="Node2D" parent="."]
+position = Vector2(319, 7)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Tooltip"]
+offset_right = 291.0
+offset_bottom = 158.0
+theme = ExtResource("2_yv8n1")
+theme_override_constants/line_separation = 15
+bbcode_enabled = true
+text = "[center]Example Text aaaaaaaaaaaaaaaaaa"
+fit_content = true
+scroll_active = false
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="button_up" from="." to="." method="_on_button_up"]
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="toggled" from="." to="." method="_on_toggled"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bifbo7enojyhs"]
+
+[ext_resource type="Theme" uid="uid://ddu24exo5q3l8" path="res://addons/BasharsUIToolkit/UI/AColorTheoryUI.tres" id="1_0vtj5"]
+[ext_resource type="Script" uid="uid://kc4eigfs2g2w" path="res://addons/BasharsUIToolkit/UI/tk_tabcontainer.gd" id="1_iryo1"]
+
+[node name="TkTabcontainer" type="TabContainer"]
+theme = ExtResource("1_0vtj5")
+script = ExtResource("1_iryo1")
+
+[connection signal="pre_popup_pressed" from="." to="." method="_on_pre_popup_pressed"]
+[connection signal="tab_button_pressed" from="." to="." method="_on_tab_button_pressed"]
+[connection signal="tab_changed" from="." to="." method="_on_tab_changed"]
+[connection signal="tab_clicked" from="." to="." method="_on_tab_clicked"]
+[connection signal="tab_hovered" from="." to="." method="_on_tab_hovered"]
+[connection signal="tab_selected" from="." to="." method="_on_tab_selected"]

@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://s66uqmipky27"]
+
+[ext_resource type="PackedScene" uid="uid://ci67p21so7ufr" path="res://addons/BasharsUIToolkit/UI/tk_h_slider.tscn" id="1_nekgw"]
+[ext_resource type="Script" uid="uid://h1e7ckauov5h" path="res://addons/BasharsUIToolkit/UI/tk_labeld_slider.gd" id="1_u4smh"]
+
+[node name="tk_labeld_slider" type="VBoxContainer"]
+focus_mode = 2
+script = ExtResource("1_u4smh")
+
+[node name="SliderName" type="Label" parent="."]
+layout_mode = 2
+focus_behavior_recursive = 1
+text = "Master Volume"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+focus_mode = 2
+
+[node name="HSlider" parent="HBoxContainer" instance=ExtResource("1_nekgw")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 3.0
+
+[node name="SliderPercent" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+focus_behavior_recursive = 1
+text = "0%"
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]

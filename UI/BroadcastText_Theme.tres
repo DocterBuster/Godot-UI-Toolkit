@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://boyhelmi7nicl"]
+
+[ext_resource type="FontFile" uid="uid://djfq7c8jju4tr" path="res://Art/Fonts/dogica/dogicapixel.ttf" id="1_0jfcy"]
+
+[resource]
+default_font = ExtResource("1_0jfcy")
+default_font_size = 32

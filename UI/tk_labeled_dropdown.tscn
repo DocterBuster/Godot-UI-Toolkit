@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy44mc1mbjy8b"]
+
+[ext_resource type="Theme" uid="uid://ddu24exo5q3l8" path="res://addons/BasharsUIToolkit/UI/AColorTheoryUI.tres" id="1_qk6jj"]
+
+[node name="tk_labeled_dropdown" type="HBoxContainer"]
+offset_right = 65.0
+offset_bottom = 31.0
+theme = ExtResource("1_qk6jj")
+
+[node name="DropdownName" type="Label" parent="."]
+layout_mode = 2
+focus_behavior_recursive = 1
+theme = ExtResource("1_qk6jj")
+text = "Options"
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 2
+theme = ExtResource("1_qk6jj")
+item_count = 4
+popup/item_0/text = "You"
+popup/item_0/id = 0
+popup/item_1/text = "can"
+popup/item_1/id = 1
+popup/item_2/text = "have"
+popup/item_2/id = 2
+popup/item_3/text = "many"
+popup/item_3/id = 3

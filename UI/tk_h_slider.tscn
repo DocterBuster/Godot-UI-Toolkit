@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci67p21so7ufr"]
+
+[ext_resource type="Theme" uid="uid://ddu24exo5q3l8" path="res://addons/BasharsUIToolkit/UI/AColorTheoryUI.tres" id="1_f7byd"]
+[ext_resource type="Script" uid="uid://db6mi3a6bvvlq" path="res://addons/BasharsUIToolkit/UI/tk_h_slider.gd" id="2_tubxs"]
+
+[node name="tk_h_slider" type="HSlider"]
+offset_right = 192.0
+offset_bottom = 45.0
+theme = ExtResource("1_f7byd")
+step = 5.0
+value = 50.0
+script = ExtResource("2_tubxs")
+
+[connection signal="drag_ended" from="." to="." method="_on_drag_ended"]
+[connection signal="drag_started" from="." to="." method="_on_drag_started"]
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://kcnv6cpigru1"]
+
+[ext_resource type="Theme" uid="uid://ddu24exo5q3l8" path="res://addons/BasharsUIToolkit/UI/AColorTheoryUI.tres" id="1_726iu"]
+[ext_resource type="Script" uid="uid://d2bvtfeupyvco" path="res://addons/BasharsUIToolkit/UI/tk_tabholder.gd" id="1_oplxa"]
+
+[node name="TkTabholder" type="TabBar"]
+focus_mode = 0
+theme = ExtResource("1_726iu")
+script = ExtResource("1_oplxa")
+
+[connection signal="tab_button_pressed" from="." to="." method="_on_tab_button_pressed"]
+[connection signal="tab_changed" from="." to="." method="_on_tab_changed"]
+[connection signal="tab_hovered" from="." to="." method="_on_tab_hovered"]
+[connection signal="tab_selected" from="." to="." method="_on_tab_selected"]
